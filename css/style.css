@@ -1,8 +1,13 @@
+:root {
+    --l_green: #27a102;
+    --p_m_green: #1c6000;
+}
+
 * {
     padding: 0px;
     margin: 0px;
     border-width: 0px;
-    color: white;
+    color: var(--l_green);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -65,19 +70,18 @@ footer {
 
 #sida1 {
     order: 1;
-    background-color: blueviolet;
 }
 
 #title_s1 {
     order: 1;
     height: 30%;
     width: 100%;
-    background-color: fuchsia;
+    background-color: var(--p_m_green);
 }
 
 #dead {
     order: 2;
-    background-color: red;
+    background-color: var(--p_m_green);
     height: 70%;
     width: 20%;
 }
@@ -86,23 +90,33 @@ footer {
     order: 3;
     height: 70%;
     width: 80%;
-    background-color: blue;
+    display: flex;
+}
+
+#imgs1_1 {
+    order: 1;
+    height: auto;
+    max-width: 50%;
+}
+
+#imgs1_2 {
+    order: 2;
+    height: auto;
+    max-width: 50%;
 }
 
 #sida2 {
     order: 2;
-    background-color: yellow;
+    background-color: var(--p_m_green);
 }
 
 #sida3 {
     order: 3;
-    background-color: cyan;
     flex-direction: column;
 }
 
 #sida5 {
     order: 5;
-    background-color: cyan;
     flex-direction: column;
 }
 
@@ -110,37 +124,37 @@ footer {
     order: 1;
     height: 40%;
     width: 50%;
-    background-color: blue;
+    background-color: var(--p_m_green);
 }
 
 .art_lc {
     order: 2;
     height: 60%;
     width: 50%;
-    background-color: coral;
+    background-color: var(--p_m_green);
 }
 
 .Bimg_lc {
     order: 3;
     height: 100%;
     width: 50%;
+    background-color: var(--p_m_green);
 }
 
 #sida4 {
     order: 4;
-    background-color: blueviolet;
 }
 
 #title_s4 {
     order: 1;
     height: 30%;
     width: 100%;
-    background-color: fuchsia;
+    background-color: var(--p_m_green);
 }
 
 #txt_s4 {
     order: 2;
-    background-color: red;
+    background-color: var(--p_m_green);
     height: 70%;
     width: 40%;
 }
@@ -149,5 +163,5 @@ footer {
     order: 3;
     height: 70%;
     width: 60%;
-    background-color: blue;
+    background-color: var(--p_m_green);
 }
