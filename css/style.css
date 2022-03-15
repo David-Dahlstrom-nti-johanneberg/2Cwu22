@@ -7,7 +7,7 @@
     padding: 0px;
     margin: 0px;
     border-width: 0px;
-    color: var(--l_green);
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -28,6 +28,10 @@ header {
     order: 1;
     width: 50%;
     height: 100%;
+}
+
+h2 {
+    text-align: center;
 }
 
 nav {
@@ -54,7 +58,7 @@ footer {
 #s_container {
     display: flex;
     flex-direction: column;
-    height: 450vh;
+    height: 520vh;
     width: 100%;
     margin-top: 10vh;
     margin-bottom: 2.5vh;
@@ -63,7 +67,7 @@ footer {
 
 .f_sidor {
     width: 100%;
-    height: 88vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -72,22 +76,28 @@ footer {
     order: 1;
 }
 
-#title_s1 {
+#s1title {
     order: 1;
+    text-align: center;
+    width: 20%;
     height: 30%;
-    width: 100%;
-    background-color: var(--p_m_green);
+}
+
+#s1txt {
+    order: 2;
+    height: 30%;
+    width: 80%;
 }
 
 #dead {
-    order: 2;
-    background-color: var(--p_m_green);
+    order: 3;
+    background-color: var(black);
     height: 70%;
     width: 20%;
 }
 
 #img_s1 {
-    order: 3;
+    order: 4;
     height: 70%;
     width: 80%;
     display: flex;
@@ -107,12 +117,21 @@ footer {
 
 #sida2 {
     order: 2;
-    background-color: var(--p_m_green);
+    background-image: url("../img/toilet_utopia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 #sida3 {
     order: 3;
     flex-direction: column;
+}
+
+#img_lcs3 {
+    background-image: url("../img/toilet_wc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #sida5 {
@@ -124,21 +143,20 @@ footer {
     order: 1;
     height: 40%;
     width: 50%;
-    background-color: var(--p_m_green);
 }
 
 .art_lc {
     order: 2;
     height: 60%;
     width: 50%;
-    background-color: var(--p_m_green);
+    background-color: var(black);
 }
 
 .Bimg_lc {
     order: 3;
     height: 100%;
     width: 50%;
-    background-color: var(--p_m_green);
+    background-color: grey;
 }
 
 #sida4 {
@@ -147,21 +165,24 @@ footer {
 
 #title_s4 {
     order: 1;
-    height: 30%;
+    height: 10%;
     width: 100%;
-    background-color: var(--p_m_green);
+    background-color: var(black);
 }
 
 #txt_s4 {
     order: 2;
-    background-color: var(--p_m_green);
-    height: 70%;
+    background-color: var(black);
+    height: 90%;
     width: 40%;
 }
 
 #img_s4 {
     order: 3;
-    height: 70%;
+    height: 90%;
     width: 60%;
-    background-color: var(--p_m_green);
+    background-image: url("../img/toilet_ocean.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
