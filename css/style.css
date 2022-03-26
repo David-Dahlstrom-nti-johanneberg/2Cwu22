@@ -134,6 +134,12 @@ footer {
     background-repeat: no-repeat;
 }
 
+#Bimg_lcs3 {
+    background-image: url("../img/toilet_sign_wc.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 #sida5 {
     order: 5;
     flex-direction: column;
