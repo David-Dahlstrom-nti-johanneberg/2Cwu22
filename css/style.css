@@ -1,6 +1,6 @@
 :root {
-    --dark: #000000;
-    --Ligth_main: #636363;
+    --dark: #1e1e1e;
+    --Ligth_main: #252526;
 }
 
 * {
@@ -21,7 +21,7 @@ header {
     height: 10vh;
     width: 100%;
     display: flex;
-    background-color: var(--dark);
+    background-color: var(--Ligth_main);
 }
 
 #TITLE {
@@ -52,13 +52,13 @@ footer {
     bottom: 0;
     height: 2.5vh;
     width: 100%;
-    background-color: var(--dark);
+    background-color: var(--Ligth_main);
 }
 
 #s_container {
     display: flex;
     flex-direction: column;
-    height: 520vh;
+    height: 420vh;
     width: 100%;
     margin-top: 10vh;
     margin-bottom: 2.5vh;
@@ -122,30 +122,25 @@ footer {
     flex-direction: column;
 }
 
-#img_lcs3 {
+#img_s3 {
+    order: 1;
+    height: 40%;
+    width: 50%;
     background-image: url("../img/toilet_wc.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#Bimg_lcs3 {
+#Bimg_s3 {
+    order: 3;
+    height: 100%;
+    width: 50%;
     background-image: url("../img/toilet_sign_wc.jpg");
     background-size: cover;
     background-position: center;
 }
 
-#sida5 {
-    order: 5;
-    flex-direction: column;
-}
-
-.img_lc {
-    order: 1;
-    height: 40%;
-    width: 50%;
-}
-
-.art_lc {
+#art_s3 {
     order: 2;
     height: 60%;
     width: 50%;
@@ -153,11 +148,9 @@ footer {
     background-color: var(--dark);
 }
 
-.Bimg_lc {
-    order: 3;
-    height: 100%;
-    width: 50%;
-    background-color: grey;
+#sida5 {
+    order: 5;
+    flex-direction: column;
 }
 
 #sida4 {
@@ -208,13 +201,13 @@ footer {
     #imgs1_2 {
         display: none;
     }
-    #img_lcs3 {
+    #img_s3 {
         width: 100%;
     }
-    #Bimg_lcs3 {
+    #Bimg_s3 {
         display: none;
     }
-    .art_lc {
+    #art_s3 {
         width: 90%;
     }
     #img_s4 {
