@@ -18,7 +18,7 @@ body {
 
 header {
     position: fixed;
-    top: 0;
+    top: -60;
     height: 10vh;
     width: 100% !important;
     display: grid;
@@ -80,7 +80,6 @@ footer {
     flex-direction: column;
     height: 400vh;
     width: 100%;
-    margin-top: 10vh;
     margin-bottom: 2.5vh;
     background-color: var(--dark);
 }
@@ -100,15 +99,19 @@ footer {
 
 #sida1 {
     order: 1;
+    background-image: url("../img/toilet_utopia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
-#s1txt {
+#s2txt {
     order: 1;
     width: 85%;
     height: 15%;
 }
 
-#img_s1 {
+#img_s2 {
     order: 3;
     height: 70%;
     width: 80%;
@@ -117,13 +120,13 @@ footer {
     display: flex;
 }
 
-#imgs1_1 {
+#imgs2_1 {
     order: 1;
     height: auto;
     max-width: 50%;
 }
 
-#imgs1_2 {
+#imgs2_2 {
     order: 2;
     height: auto;
     max-width: 50%;
@@ -131,10 +134,6 @@ footer {
 
 #sida2 {
     order: 2;
-    background-image: url("../img/toilet_utopia.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
 }
 
 #sida3 {

@@ -1,9 +1,9 @@
-element.addEventListener("scroll", scroll);
+window.addEventListener('scroll', scroll);
 
 function scroll() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("header").style.Top = "0";
+        document.getElementsByTagName("header").style.top = "0px";
     } else {
-        document.getElementById("header").style.Top = "-60";
+        document.getElementsByTagName("header").style.top = "-60px";
     }
 }
