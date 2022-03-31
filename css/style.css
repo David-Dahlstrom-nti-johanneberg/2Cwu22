@@ -18,29 +18,33 @@ body {
 
 header {
     position: fixed;
-    top: -60;
+    top: 0;
     height: 10vh;
-    width: 100%;
-    display: block;
+    width: 100% !important;
+    display: grid;
+    grid-template-areas: 'lg blank na';
+    grid-template-columns: 10vw 35vw 45vw;
     transition: top 0.5s;
     margin: auto;
     background-color: var(--Ligth_main);
 }
 
 nav {
-    width: 700px;
+    grid-area: na;
+    width: 800px;
     height: 100%;
     margin: auto;
 }
 
 nav a {
-    float: right;
+    height: 100%;
+    float: left;
     display: block;
     text-decoration: none;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 15px;
+    padding: 15;
 }
 
 nav a:hover {
@@ -49,8 +53,8 @@ nav a:hover {
 }
 
 #TITLE {
-    order: 1;
-    width: 50%;
+    grid-area: lg;
+    width: auto;
     height: 100%;
 }
 
@@ -153,7 +157,8 @@ footer {
     width: 50%;
     background-image: url("../img/toilet_sign_wc.jpg");
     background-size: cover;
-    background-repeat: no-repeat background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #art_s3 {
