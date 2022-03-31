@@ -18,11 +18,34 @@ body {
 
 header {
     position: fixed;
-    top: 0;
+    top: -60;
     height: 10vh;
     width: 100%;
-    display: flex;
+    display: block;
+    transition: top 0.5s;
+    margin: auto;
     background-color: var(--Ligth_main);
+}
+
+nav {
+    width: 700px;
+    height: 100%;
+    margin: auto;
+}
+
+nav a {
+    float: right;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
 }
 
 #TITLE {
@@ -33,14 +56,6 @@ header {
 
 h2 {
     text-align: center;
-}
-
-nav {
-    order: 2;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 a {
@@ -59,7 +74,7 @@ footer {
 #s_container {
     display: flex;
     flex-direction: column;
-    height: 420vh;
+    height: 400vh;
     width: 100%;
     margin-top: 10vh;
     margin-bottom: 2.5vh;
@@ -68,6 +83,8 @@ footer {
 
 .text {
     background-color: var(--darker-dark);
+    margin: auto;
+    padding: 5%;
 }
 
 .f_sidor {
@@ -81,19 +98,10 @@ footer {
     order: 1;
 }
 
-#s1title {
-    order: 1;
-    text-align: center;
-    width: 20%;
-    height: 30%;
-    margin-top: 1%;
-}
-
 #s1txt {
-    order: 2;
-    height: 30%;
-    width: 80%;
-    margin-top: 1%;
+    order: 1;
+    width: 85%;
+    height: 15%;
 }
 
 #img_s1 {
@@ -101,6 +109,7 @@ footer {
     height: 70%;
     width: 80%;
     margin: auto;
+    margin-bottom: 0px;
     display: flex;
 }
 
@@ -144,14 +153,13 @@ footer {
     width: 50%;
     background-image: url("../img/toilet_sign_wc.jpg");
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat background-position: center;
 }
 
 #art_s3 {
     order: 2;
-    height: 60%;
-    width: 50%;
-    margin: auto;
+    height: 30%;
+    width: 40%;
 }
 
 #sida5 {
@@ -163,24 +171,17 @@ footer {
     order: 4;
 }
 
-#title_s4 {
-    order: 1;
-    height: 10%;
-    width: 100%;
-    margin-top: 1%;
-}
-
 #txt_s4 {
-    order: 2;
-    height: 90%;
+    order: 1;
+    height: 30%;
     width: 40%;
-    margin: auto;
+    margin-top: 10%;
 }
 
 #img_s4 {
-    order: 3;
-    height: 90%;
-    width: 60%;
+    order: 2;
+    height: 100%;
+    width: 50%;
     background-image: url("../img/toilet_ocean.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,13 +208,14 @@ footer {
         display: none;
     }
     #img_s3 {
-        width: 100%;
-    }
-    #Bimg_s3 {
         display: none;
     }
     #art_s3 {
-        width: 90%;
+        margin-top: 10%;
+    }
+    #Bimg_s3 {
+        width: 40%;
+        background-position: center;
     }
     #img_s4 {
         width: 40%;
