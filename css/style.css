@@ -1,6 +1,7 @@
 :root {
-    --dark: #1e1e1e;
-    --Ligth_main: #252526;
+    --dark: #252526;
+    --darker-dark: #1e1e1e;
+    --Ligth_main: #383434;
 }
 
 * {
@@ -50,7 +51,7 @@ a {
 footer {
     position: fixed;
     bottom: 0;
-    height: 2.5vh;
+    height: 3vh;
     width: 100%;
     background-color: var(--Ligth_main);
 }
@@ -63,6 +64,10 @@ footer {
     margin-top: 10vh;
     margin-bottom: 2.5vh;
     background-color: var(--dark);
+}
+
+.text {
+    background-color: var(--darker-dark);
 }
 
 .f_sidor {
@@ -81,12 +86,14 @@ footer {
     text-align: center;
     width: 20%;
     height: 30%;
+    margin-top: 1%;
 }
 
 #s1txt {
     order: 2;
     height: 30%;
     width: 80%;
+    margin-top: 1%;
 }
 
 #img_s1 {
@@ -145,7 +152,6 @@ footer {
     height: 60%;
     width: 50%;
     margin: auto;
-    background-color: var(--dark);
 }
 
 #sida5 {
@@ -161,12 +167,11 @@ footer {
     order: 1;
     height: 10%;
     width: 100%;
-    background-color: var(--dark);
+    margin-top: 1%;
 }
 
 #txt_s4 {
     order: 2;
-    background-color: var(--dark);
     height: 90%;
     width: 40%;
     margin: auto;
@@ -179,7 +184,7 @@ footer {
     background-image: url("../img/toilet_ocean.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 @media (max-width:600px) {
