@@ -42,7 +42,7 @@ nav a {
     display: block;
     margin: auto;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 900;
     transition-duration: 0.2s;
@@ -111,7 +111,7 @@ article {
     text-align: center;
     padding: 1%;
     height: auto;
-    width: 30vw;
+    width: auto;
     order: 1;
     background-color: #00000090;
     margin: auto;
@@ -119,7 +119,7 @@ article {
 }
 
 #welcome {
-    font-size: 5vw;
+    font-size: 4rem;
 }
 
 #art_s2 {
@@ -220,11 +220,13 @@ article {
         display: none;
     }
     #art_s3 {
+        order: 1;
         margin-top: 10%;
         width: 55%;
         height: 80%;
     }
     #Bimg_s3 {
+        order: 2;
         width: 40%;
     }
     #art_s4 {
