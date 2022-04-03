@@ -1,263 +1,236 @@
-                                   :root {
-                                      --dark: #252526;
-                                      --darker-dark: #1e1e1e;
-                                      --Ligth_main: #383434;
-                                  }
-                                  
-                                  * {
-                                      padding: 0px;
-                                      margin: 0px;
-                                      border-width: 0px;
-                                      color: white;
-                                      font-family: Arial, Helvetica, sans-serif;
-                                  }
-                                  
-                                  body {
-                                      height: 100vh;
-                                  }
-                                  
-                                  header {
-                                      position: fixed;
-                                      top: -10vh;
-                                      height: 10vh;
-                                      width: 100% !important;
-                                      display: grid;
-                                      grid-template-areas: 'lg blank na';
-                                      grid-template-columns: 10vw 35vw 45vw;
-                                      transition: top 0.5s;
-                                      margin: auto;
-                                      background-color: var(--Ligth_main);
-                                  }
-                                  
-                                  nav {
-                                      grid-area: na;
-                                      width: 800px;
-                                      height: 100%;
-                                      margin: auto;
-                                  }
-                                  
-                                  nav a {
-                                      height: 110%;
-                                      float: left;
-                                      display: block;
-                                      margin: auto;
-                                      text-align: center;
-                                      text-decoration: none;
-                                      font-size: 18px;
-                                      text-transform: uppercase;
-                                      font-weight: 900;
-                                      transition-duration: 0.2s;
-                                  }
-                                  
-                                  nav a:hover {
-                                      background-color: white;
-                                      color: black;
-                                      border-radius: 0 0 1vh 1vh;
-                                  }
-                                  
-                                  #TITLE {
-                                      grid-area: lg;
-                                      width: auto;
-                                      height: 100%;
-                                  }
-                                  
-                                  h2 {
-                                      text-align: center;
-                                  }
-                                  
-                                  a {
-                                      width: 20%;
-                                      height: 20%;
-                                  }
-                                  
-                                  footer {
-                                      position: fixed;
-                                      bottom: -5vh;
-                                      height: 5vh;
-                                      width: 100% !important;
-                                      background-color: var(--Ligth_main);
-                                      transition: bottom 0.25s;
-                                  }
-                                  
-                                  #s_container {
-                                      display: flex;
-                                      flex-direction: column;
-                                      height: 400vh;
-                                      width: 100%;
-                                      margin-bottom: 2.5vh;
-                                      background-color: var(--dark);
-                                  }
-                                  
-                                  article {
-                                      background-color: var(--darker-dark);
-                                      margin: auto;
-                                      padding: 5%;
-                                      border-radius: 1vh;
-                                      padding: 1%;
-                                  }
-                                  
-                                  .f_sidor {
-                                      width: 100%;
-                                      height: 100vh;
-                                      display: flex;
-                                      flex-wrap: wrap;
-                                  }
-                                  
-                                  #sida1 {
-                                      order: 1;
-                                      background-image: url("../img/toilet_utopia.jpg");
-                                      background-size: cover;
-                                      background-repeat: no-repeat;
-                                      background-position: bottom;
-                                      display: flex;
-                                      justify-content: center;
-                                  }
-                                  
-                                  #art_s1 {
-                                      text-align: center;
-                                      padding: 1%;
-                                      height: auto;
-                                      width: 30vw;
-                                      order: 1;
-                                      background-color: #00000090;
-                                      margin: auto;
-                                      text-transform: uppercase;
-                                  }
-                                  
-                                  #welcome {
-                                      font-size: 5vw;
-                                  }
-                                  
-                                  #art_s2 {
-                                      order: 1;
-                                      width: 85%;
-                                      height: 15%;
-                                  }
-                                  
-                                  #img_s2 {
-                                      order: 3;
-                                      height: 70%;
-                                      width: 80%;
-                                      margin: auto;
-                                      margin-bottom: 0px;
-                                      display: flex;
-                                  }
-                                  
-                                  #imgs2_1 {
-                                      order: 1;
-                                      height: auto;
-                                      max-width: 50%;
-                                  }
-                                  
-                                  #imgs2_2 {
-                                      order: 2;
-                                      height: auto;
-                                      max-width: 50%;
-                                  }
-                                  
-                                  #sida2 {
-                                      order: 2;
-                                  }
-                                  
-                                  #sida3 {
-                                      order: 3;
-                                      flex-direction: column;
-                                  }
-                                  
-                                  #img_s3 {
-                                      order: 1;
-                                      height: 40%;
-                                      width: 50%;
-                                      background-image: url("../img/toilet_wc.jpg");
-                                      background-size: cover;
-                                      background-repeat: no-repeat;
-                                  }
-                                  
-                                  #Bimg_s3 {
-                                      order: 3;
-                                      height: 100%;
-                                      width: 50%;
-                                      background-image: url("../img/toilet_sign_wc.jpg");
-                                      background-size: cover;
-                                      background-repeat: no-repeat;
-                                      background-position: center;
-                                  }
-                                  
-                                  #art_s3 {
-                                      order: 2;
-                                      height: 30%;
-                                      width: 40%;
-                                  }
-                                  
-                                  #sida5 {
-                                      order: 5;
-                                      flex-direction: column;
-                                  }
-                                  
-                                  #sida4 {
-                                      order: 4;
-                                  }
-                                  
-                                  #art_s4 {
-                                      order: 1;
-                                      height: 30%;
-                                      width: 40%;
-                                      margin-top: 10%;
-                                  }
-                                  
-                                  #img_s4 {
-                                      order: 2;
-                                      height: 100%;
-                                      width: 50%;
-                                      background-image: url("../img/toilet_ocean.jpg");
-                                      background-size: cover;
-                                      background-repeat: no-repeat;
-                                      background-position: bottom;
-                                  }
-                                  
-                                  @media (max-width:600px) {
-                                      nav a {
-                                          margin: 2%;
-                                      }
-                                      header {
-                                          grid-template-areas: 'lg auto na';
-                                          grid-template-columns: 10vw 5vw 90vw;
-                                      }
-                                      nav {
-                                          width: auto;
-                                      }
-                                      nav a {
-                                          width: auto;
-                                      }
-                                      #s1title {
-                                          width: 100%;
-                                          height: 10%;
-                                      }
-                                      #art_s2 {
-                                          width: 90%;
-                                          height: 20%;
-                                          margin: auto;
-                                      }
-                                      #img_s1 {
-                                          width: 90%;
-                                      }
-                                      #imgs1_1 {
-                                          max-width: 100%;
-                                      }
-                                      #imgs1_2 {
-                                          display: none;
-                                      }
-                                      #img_s3 {
-                                          display: none;
-                                      }
-                                      #art_s3 {
-                                          margin-top: 10%;
-                                      }
-                                      #Bimg_s3 {
-                                          width: 40%;
-                                          background-position: center;
-                                      }
-                                      #img_s4 {
-                                          width: 40%;
-                                      }
-                                  }
+:root {
+    --dark: #252526;
+    --darker-dark: #1e1e1e;
+    --Ligth_main: #383434;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border-width: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: -7vh;
+    height: 7vh;
+    width: 100% !important;
+    display: block;
+    transition: top 0.5s;
+    margin: auto;
+    background-color: var(--Ligth_main);
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    height: 110%;
+    width: 25%;
+    float: left;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition-duration: 0.2s;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 0 0 1vh 1vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    width: 20%;
+    height: 20%;
+}
+
+footer {
+    position: fixed;
+    bottom: -5vh;
+    height: 5vh;
+    width: 100% !important;
+    background-color: var(--Ligth_main);
+    transition: bottom 0.25s;
+}
+
+#s_container {
+    display: grid;
+    grid-template-rows: 100vh 100vh 100vh 100vh;
+    height: 400vh;
+    width: 100%;
+    margin-bottom: 2.5vh;
+    background-color: var(--dark);
+}
+
+article {
+    background-color: var(--darker-dark);
+    margin: auto;
+    padding: 5%;
+    border-radius: 1vh;
+    padding: 1%;
+}
+
+.f_sidor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sida1 {
+    grid-row: 1;
+    background-image: url("../img/toilet_utopia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+}
+
+#art_s1 {
+    text-align: center;
+    padding: 1%;
+    height: auto;
+    width: 30vw;
+    order: 1;
+    background-color: #00000090;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+#welcome {
+    font-size: 5vw;
+}
+
+#art_s2 {
+    order: 1;
+    width: 85%;
+    height: 15%;
+}
+
+#img_s2 {
+    order: 3;
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+#imgs2_1 {
+    order: 1;
+    height: auto;
+    max-width: 50%;
+}
+
+#imgs2_2 {
+    order: 2;
+    height: auto;
+    max-width: 50%;
+}
+
+#sida2 {
+    grid-row: 2;
+}
+
+#sida3 {
+    grid-row: 3;
+    flex-direction: column;
+}
+
+#img_s3 {
+    order: 1;
+    height: 40%;
+    width: 50%;
+    background-image: url("../img/toilet_wc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Bimg_s3 {
+    order: 3;
+    height: 100%;
+    width: 50%;
+}
+
+#art_s3 {
+    order: 2;
+    height: 30%;
+    width: 40%;
+}
+
+#sida4 {
+    grid-row: 4;
+}
+
+#art_s4 {
+    order: 1;
+    height: 30%;
+    width: 40%;
+    margin-top: 10%;
+}
+
+#img_s4 {
+    order: 2;
+    height: 100%;
+    width: 50%;
+}
+
+@media (max-width:600px) {
+    #s1title {
+        width: 100%;
+        height: 10%;
+    }
+    #art_s2 {
+        width: 90%;
+        margin: auto;
+    }
+    #img_s2 {
+        width: 90%;
+    }
+    #imgs2_1 {
+        max-width: 100%;
+    }
+    #imgs2_2 {
+        display: none;
+    }
+    #img_s3 {
+        display: none;
+    }
+    #art_s3 {
+        margin-top: 10%;
+        width: 55%;
+        height: 80%;
+    }
+    #Bimg_s3 {
+        width: 40%;
+    }
+    #art_s4 {
+        margin-top: 10%;
+        width: 55%;
+        height: 80%;
+    }
+    #img_s4 {
+        width: 40%;
+    }
+}

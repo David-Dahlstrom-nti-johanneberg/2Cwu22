@@ -5,7 +5,7 @@ function scroll() {
         document.querySelector("header").style.top = "0px";
         document.querySelector("footer").style.bottom = "0px";
     } else {
-        document.querySelector("header").style.top = "-60vh";
+        document.querySelector("header").style.top = "-7vh";
         document.querySelector("footer").style.bottom = "-5vh";
     }
 }
