@@ -113,12 +113,12 @@ article {
     height: auto;
     width: auto;
     order: 1;
-    background-color: #00000090;
+    background-color: #000000af;
     margin: auto;
     text-transform: uppercase;
 }
 
-#welcome {
+h1 {
     font-size: 4rem;
 }
 
