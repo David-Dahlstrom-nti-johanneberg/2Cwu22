@@ -162,9 +162,6 @@ article {
     order: 1;
     height: 40%;
     width: 50%;
-    background-image: url("../img/toilet_wc.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #Bimg_s3 {
@@ -197,12 +194,17 @@ article {
 }
 
 @media (max-width:600px) {
+    #s_container {
+        height: 440vh;
+        grid-template-rows: minmax(100vh, 110vh) minmax(100vh, 110vh) minmax(100vh, 110vh) minmax(100vh, 110vh);
+    }
     #s1title {
         width: 100%;
-        height: 10%;
+        height: auto;
     }
     #art_s2 {
         width: 90%;
+        height: auto;
         margin: auto;
     }
     #img_s2 {
