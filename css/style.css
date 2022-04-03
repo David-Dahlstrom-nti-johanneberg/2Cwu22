@@ -140,7 +140,7 @@ article {
 #imgs2_1 {
     order: 1;
     height: auto;
-    max-width: 50%;
+    width: 50%;
 }
 
 #imgs2_2 {
@@ -209,7 +209,7 @@ article {
         width: 90%;
     }
     #imgs2_1 {
-        max-width: 100%;
+        width: 100%;
     }
     #imgs2_2 {
         display: none;
