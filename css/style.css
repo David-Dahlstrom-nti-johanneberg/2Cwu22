@@ -46,6 +46,7 @@ nav a {
     text-transform: uppercase;
     font-weight: 900;
     transition-duration: 0.2s;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -61,7 +62,6 @@ h2 {
 a {
     width: 20%;
     height: 20%;
-    text-decoration: none;
 }
 
 footer {
@@ -124,29 +124,53 @@ h1 {
 
 #art_s2 {
     order: 1;
-    width: 85%;
-    height: 15%;
+    width: 20%;
+    height: 5%;
 }
 
 #img_s2 {
     order: 3;
-    height: 70%;
-    width: 80%;
+    height: 85%;
+    width: 90%;
     margin: auto;
     margin-bottom: 0px;
     display: flex;
 }
 
+.imgs2_art {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+}
+
+.s2txt {
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-image: url("../img/shadowxD.png");
+}
+
 #imgs2_1 {
     order: 1;
-    height: auto;
+    height: 100%;
     width: 50%;
+    background-image: url("../img/toilet_destro.jpg");
 }
 
 #imgs2_2 {
     order: 2;
-    height: auto;
-    max-width: 50%;
+    height: 100%;
+    width: 50%;
+    background-image: url("../img/toilet_urinoar.jpg");
+}
+
+#imgs2_1:hover>div {
+    display: block;
+}
+
+#imgs2_2:hover>div {
+    display: block;
 }
 
 #sida2 {
