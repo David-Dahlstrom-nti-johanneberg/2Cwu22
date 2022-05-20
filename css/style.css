@@ -145,10 +145,18 @@ h1 {
 }
 
 .s2txt {
+    height: 50%;
+    width: 70%;
+    display: none;
+}
+
+.shadow_container {
+    background-image: url("../img/shadowxD.png");
     height: 100%;
     width: 100%;
     display: none;
-    background-image: url("../img/shadowxD.png");
+    justify-content: center;
+    align-items: center;
 }
 
 #imgs2_1 {
@@ -166,10 +174,18 @@ h1 {
 }
 
 #imgs2_1:hover>div {
+    display: flex;
+}
+
+#imgs2_1:hover>div>div {
     display: block;
 }
 
 #imgs2_2:hover>div {
+    display: flex;
+}
+
+#imgs2_2:hover>div>div {
     display: block;
 }
 
