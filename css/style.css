@@ -208,6 +208,7 @@ h1 {
     order: 3;
     height: 100%;
     width: 50%;
+    object-fit: cover;
 }
 
 #art_s3 {
@@ -235,6 +236,7 @@ h1 {
     order: 2;
     height: 100%;
     width: 50%;
+    object-fit: cover;
 }
 
 @media (max-width:600px) {
